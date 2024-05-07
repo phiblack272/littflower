@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tặng Cho Thu Hương Nè</title>
+    <link href="" rel="stylesheet">
+  </head>
+  <style>
+    *, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container-animation {
+  position: relative;
+  font-size: 120px;
+  width: 0.2em;
+  margin: 150px auto;
+}
+.container-animation .stem {
+  height: 1.7em;
+  width: 0.05em;
+  background: #95D15B;
+  position: relative;
+  border-radius: 2em;
+}
+.container-animation .top {
+  position: absolute;
+  top: 0.02em;
+  left: -0.06em;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform: rotate(-6deg);
+  transform-origin: 50% 50%;
+  transform: rotate(-6deg);
+}
+.container-animation .top .heart {
+  width: 0.2em;
+  height: 0.2em;
+  background: #f1f1f1;
+  border-radius: 1em;
+  position: relative;
+  z-index: 10;
+  left: 0;
+  top: -0.1em;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: heart-grow 0.5s ease 7s forwards;
+  animation: heart-grow 0.5s ease 7s forwards;
+}
+.container-animation .top [class^=petal-] {
+  position: absolute;
+  left: -0.45em;
+  top: 0;
+  -webkit-transform-origin: 100% 0;
+  -webkit-transform: scale(0);
+  transform-origin: 100% 0;
+  transform: scale(0);
+}
+.container-animation .top [class^=petal-] div {
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 0.5em 0 0.5em 0.5em;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+.container-animation .top .petal-1 {
+  -webkit-animation: grow 4s ease 0s forwards;
+  animation: grow 4s ease 0s forwards;
+}
+.container-animation .top .petal-1 div {
+  -webkit-transform: rotate(-76deg) skewX(-12deg) skewY(-4deg);
+  transform: rotate(-76deg) skewX(-12deg) skewY(-4deg);
+  background: #FF79A1;
+  box-shadow: inset 2px -3px 0 5px #ff2d6b;
+}
+.container-animation .top .petal-2 {
+  -webkit-animation: grow 4s ease 1s forwards;
+  animation: grow 4s ease 1s forwards;
+}
+.container-animation .top .petal-2 div {
+  -webkit-transform: rotate(-148deg) skewX(-12deg) skewY(-4deg);
+  transform: rotate(-148deg) skewX(-12deg) skewY(-4deg);
+  background: #FF79A1;
+  box-shadow: inset 2px -3px 0 5px #ff2d6b;
+}
+.container-animation .top .petal-3 {
+  -webkit-animation: grow 4s ease 2s forwards;
+  animation: grow 4s ease 2s forwards;
+}
+.container-animation .top .petal-3 div {
+  -webkit-transform: rotate(-220deg) skewX(-12deg) skewY(-4deg);
+  transform: rotate(-220deg) skewX(-12deg) skewY(-4deg);
+  background: #FF79A1;
+  box-shadow: inset 2px -3px 0 5px #ff2d6b;
+}
+.container-animation .top .petal-4 {
+  -webkit-animation: grow 4s ease 3s forwards;
+  animation: grow 4s ease 3s forwards;
+}
+.container-animation .top .petal-4 div {
+  -webkit-transform: rotate(-292deg) skewX(-12deg) skewY(-4deg);
+  transform: rotate(-292deg) skewX(-12deg) skewY(-4deg);
+  background: #FF79A1;
+  box-shadow: inset 2px -3px 0 5px #ff2d6b;
+}
+.container-animation .top .petal-5 {
+  -webkit-animation: grow 4s ease 4s forwards;
+  animation: grow 4s ease 4s forwards;
+}
+.container-animation .top .petal-5 div {
+  -webkit-transform: rotate(-4deg) skewX(-12deg) skewY(-4deg);
+  transform: rotate(-4deg) skewX(-12deg) skewY(-4deg);
+  background: #FF79A1;
+  box-shadow: inset 2px -3px 0 5px #ff2d6b;
+}
+.container-animation [class^=leaf-] {
+  position: absolute;
+  bottom: 0.03em;
+  width: 0.4em;
+  height: 0.4em;
+  background: #95D15B;
+  left: -0.47em;
+}
+.container-animation .leaf-1 {
+  -webkit-transform: skewX(25deg) skewY(10deg);
+  transform: skewX(25deg) skewY(10deg);
+  border-radius: 0.5em 0.5em 0 0.5em;
+  box-shadow: inset 1px 1px 0 4px #67a32e;
+}
+.container-animation .leaf-2 {
+  left: 0.12em;
+  -webkit-transform: skewX(-25deg) skewY(-10deg);
+  transform: skewX(-25deg) skewY(-10deg);
+  border-radius: 0.5em 0.5em 0.5em 0;
+  box-shadow: inset -1px 1px 0 4px #67a32e;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-webkit-keyframes heart-grow {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  </style>
+  <body>
+    
+    <div class="container-animation">
+      <div class="stem">
+        <div class="top">
+          <div class="heart"></div>
+          <div class="petal-1">
+            <div></div>
+          </div>
+          <div class="petal-2">
+            <div></div>
+          </div>
+          <div class="petal-3">
+            <div></div>
+          </div>
+          <div class="petal-4">
+            <div></div>
+          </div>
+          <div class="petal-5">
+            <div></div>
+          </div>
+        </div>
+        <div class="leaf-1"></div>
+        <div class="leaf-2"></div>
+      </div>
+    </div>
+  </body>
+</html>
